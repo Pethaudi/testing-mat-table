@@ -22,7 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 @Component({
 	selector: 'app-root',
-	template: `
+	template: "<app-table></app-table>", /*`
 <div id="body"  class="mat-elevation-z8">
 	<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
 
@@ -38,7 +38,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 		<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 		<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 	</table>
-</div>`
+</div>`*/
 })
 export class AppComponent {
 	@ViewChild(MatPaginator, {static: true})
